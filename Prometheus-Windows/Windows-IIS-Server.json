@@ -77,7 +77,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "wmi_iis_server_uri_cache_flushes_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_uri_cache_flushes_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -85,7 +85,7 @@
           "refId": "A"
         },
         {
-          "expr": "wmi_iis_server_uri_cache_hits_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_uri_cache_hits_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -93,7 +93,7 @@
           "refId": "B"
         },
         {
-          "expr": "wmi_iis_server_uri_cache_items_flushed_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_uri_cache_items_flushed_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -101,14 +101,14 @@
           "refId": "C"
         },
         {
-          "expr": "wmi_iis_server_uri_cache_items_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_uri_cache_items_total{job=~\"$server\"}",
           "format": "time_series",
           "intervalFactor": 1,
           "legendFormat": "Items : {{ mode }}",
           "refId": "D"
         },
         {
-          "expr": "wmi_iis_server_uri_cache_queries_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_uri_cache_queries_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -210,7 +210,7 @@
       "pluginVersion": "6.2.2",
       "targets": [
         {
-          "expr": "wmi_iis_server_uri_cache_items{job=~\"$server\"}",
+          "expr": "windows_iis_server_uri_cache_items{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -288,7 +288,7 @@
       "pluginVersion": "6.2.2",
       "targets": [
         {
-          "expr": "wmi_iis_server_metadata_cache_items{job=~\"$server\"}",
+          "expr": "windows_iis_server_metadata_cache_items{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -354,7 +354,7 @@
       "pluginVersion": "6.2.2",
       "targets": [
         {
-          "expr": "wmi_iis_server_metadata_cache_flushes_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_metadata_cache_flushes_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -430,7 +430,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_metadata_cache_queries_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_metadata_cache_queries_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -516,7 +516,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_metadata_cache_hits_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_metadata_cache_hits_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -602,7 +602,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_metadata_cache_items_cached_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_metadata_cache_items_cached_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -688,7 +688,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_metadata_cache_items_flushed_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_metadata_cache_items_flushed_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -755,7 +755,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(wmi_iis_requests_total{job=~\"$server\", site=~\"$instance\", method=\"GET\"}[$interval])",
+          "expr": "rate(windows_iis_requests_total{job=~\"$server\", site=~\"$instance\", method=\"GET\"}[$interval])",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -763,7 +763,7 @@
           "refId": "A"
         },
         {
-          "expr": "rate(wmi_iis_requests_total{job=~\"$server\", site=~\"$instance\", method=\"POST\"}[$interval])",
+          "expr": "rate(windows_iis_requests_total{job=~\"$server\", site=~\"$instance\", method=\"POST\"}[$interval])",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -877,7 +877,7 @@
       "pluginVersion": "6.2.2",
       "targets": [
         {
-          "expr": "wmi_iis_server_cache_active_flushed_entries{job=~\"$server\"}",
+          "expr": "windows_iis_server_cache_active_flushed_entries{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -945,7 +945,7 @@
       "pluginVersion": "6.2.2",
       "targets": [
         {
-          "expr": "wmi_iis_server_file_cache_memory_bytes{job=~\"$server\"}",
+          "expr": "windows_iis_server_file_cache_memory_bytes{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1011,7 +1011,7 @@
       "pluginVersion": "6.2.2",
       "targets": [
         {
-          "expr": "wmi_iis_server_file_cache_items{job=~\"$server\"}",
+          "expr": "windows_iis_server_file_cache_items{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1087,7 +1087,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_file_cache_items_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_file_cache_items_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1173,7 +1173,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_file_cache_flushes_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_file_cache_flushes_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1259,7 +1259,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_file_cache_max_memory_bytes{job=~\"$server\"}",
+          "expr": "windows_iis_server_file_cache_max_memory_bytes{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1345,7 +1345,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_file_cache_queries_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_file_cache_queries_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1431,7 +1431,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_file_cache_hits_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_file_cache_hits_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1530,7 +1530,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_output_cache_flushes_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_output_cache_flushes_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1616,7 +1616,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_output_cache_active_flushed_items{job=~\"$server\"}",
+          "expr": "windows_iis_server_output_cache_active_flushed_items{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1702,7 +1702,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_output_cache_items{job=~\"$server\"}",
+          "expr": "windows_iis_server_output_cache_items{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1788,7 +1788,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_output_cache_items_flushed_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_output_cache_items_flushed_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1874,7 +1874,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_output_cache_memory_bytes{job=~\"$server\"}",
+          "expr": "windows_iis_server_output_cache_memory_bytes{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1960,7 +1960,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_output_cache_queries_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_output_cache_queries_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2046,7 +2046,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "wmi_iis_server_output_cache_hits_total{job=~\"$server\"}",
+          "expr": "windows_iis_server_output_cache_hits_total{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2127,7 +2127,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "wmi_iis_current_connections{job=~\"$server\", site=~\"$instance\"}",
+          "expr": "windows_iis_current_connections{job=~\"$server\", site=~\"$instance\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2225,7 +2225,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(wmi_iis_sent_bytes_total{job=~\"$server\", site=~\"$instance\"}[$interval])",
+          "expr": "rate(windows_iis_sent_bytes_total{job=~\"$server\", site=~\"$instance\"}[$interval])",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2233,7 +2233,7 @@
           "refId": "A"
         },
         {
-          "expr": "rate(wmi_iis_received_bytes_total{job=~\"$server\", site=~\"$instance\"}[$interval])",
+          "expr": "rate(windows_iis_received_bytes_total{job=~\"$server\", site=~\"$instance\"}[$interval])",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2324,7 +2324,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "wmi_iis_rejected_async_io_requests_total{job=~\"$server\", site=~\"$instance\"}",
+          "expr": "windows_iis_rejected_async_io_requests_total{job=~\"$server\", site=~\"$instance\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2414,7 +2414,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "wmi_iis_blocked_async_io_requests_total{job=~\"$server\", site=~\"$instance\"}",
+          "expr": "windows_iis_blocked_async_io_requests_total{job=~\"$server\", site=~\"$instance\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2517,7 +2517,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "wmi_iis_worker_request_errors_total{job=~\"$server\", app=~\"$application\"}",
+          "expr": "windows_iis_worker_request_errors_total{job=~\"$server\", app=~\"$application\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2607,7 +2607,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "wmi_iis_worker_request_errors_total{job=~\"$server\", app=~\"$application\"}",
+          "expr": "windows_iis_worker_request_errors_total{job=~\"$server\", app=~\"$application\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2697,7 +2697,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "wmi_iis_total_worker_processes_created{job=~\"$server\"}",
+          "expr": "windows_iis_total_worker_processes_created{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2786,7 +2786,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "wmi_iis_total_worker_process_failures{job=~\"$server\"}",
+          "expr": "windows_iis_total_worker_process_failures{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2875,7 +2875,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "wmi_iis_total_worker_process_ping_failures{job=~\"$server\"}",
+          "expr": "windows_iis_total_worker_process_ping_failures{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2964,7 +2964,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "wmi_iis_total_worker_process_startup_failures{job=~\"$server\"}",
+          "expr": "windows_iis_total_worker_process_startup_failures{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -3053,7 +3053,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "wmi_iis_total_worker_process_shutdown_failures{job=~\"$server\"}",
+          "expr": "windows_iis_total_worker_process_shutdown_failures{job=~\"$server\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -3158,7 +3158,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "wmi_iis_current_application_pool_state{job=~\"$server\", state=\"Running\"}",
+          "expr": "windows_iis_current_application_pool_state{job=~\"$server\", state=\"Running\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -3253,7 +3253,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "((wmi_iis_current_application_pool_start_time{job=~\"$server\"}) * 1000)",
+          "expr": "((windows_iis_current_application_pool_start_time{job=~\"$server\"}) * 1000)",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -3345,14 +3345,14 @@
           "value": "Adisa-WA.ikub.local"
         },
         "datasource": "Prometheus",
-        "definition": "label_values(wmi_iis_requests_total, alias)",
+        "definition": "label_values(windows_iis_requests_total, alias)",
         "hide": 0,
         "includeAll": false,
         "label": "Server",
         "multi": false,
         "name": "server",
         "options": [],
-        "query": "label_values(wmi_iis_requests_total, alias)",
+        "query": "label_values(windows_iis_requests_total, alias)",
         "refresh": 2,
         "regex": "",
         "skipUrlSync": false,
@@ -3372,7 +3372,7 @@
           ]
         },
         "datasource": "Prometheus",
-        "definition": "label_values(wmi_iis_current_connections{job=~\"$server.*\"}, site)",
+        "definition": "label_values(windows_iis_current_connections{job=~\"$server.*\"}, site)",
         "hide": 0,
         "includeAll": true,
         "label": "Website",
@@ -3395,7 +3395,7 @@
             "value": "OData Provider"
           }
         ],
-        "query": "label_values(wmi_iis_current_connections{job=~\"$server.*\"}, site)",
+        "query": "label_values(windows_iis_current_connections{job=~\"$server.*\"}, site)",
         "refresh": 0,
         "regex": "",
         "skipUrlSync": false,
@@ -3413,7 +3413,7 @@
           "value": "$__all"
         },
         "datasource": "Prometheus",
-        "definition": "label_values(wmi_iis_worker_threads{job=~\"$server.*\"}, app)",
+        "definition": "label_values(windows_iis_worker_threads{job=~\"$server.*\"}, app)",
         "hide": 2,
         "includeAll": true,
         "label": "Application",
@@ -3431,7 +3431,7 @@
             "value": "Adisa WA"
           }
         ],
-        "query": "label_values(wmi_iis_worker_threads{job=~\"$server.*\"}, app)",
+        "query": "label_values(windows_iis_worker_threads{job=~\"$server.*\"}, app)",
         "refresh": 0,
         "regex": "",
         "skipUrlSync": false,
